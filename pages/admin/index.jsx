@@ -84,8 +84,8 @@ const Index = ({ orders, products }) => {
               <th>Action</th>
             </tr>
           </tbody>
-          {orderList.map( order => (
-            <tbody ket={order._id}>
+          {orderList.map(order => (
+            <tbody key={order._id}>
               <tr className={styles.brTitle}>
                 <td>
                   {order._id.slice(0, 5)}...
